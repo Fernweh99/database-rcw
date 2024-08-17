@@ -13,7 +13,7 @@ module.exports = {
                 type: Sequelize.INTEGER
             },
             annual_rate: {
-                type: Sequelize.DECIMAL(3,2),
+                type: Sequelize.DECIMAL(5,2),
                 allowNull: false
             },
             confirm_at: {
