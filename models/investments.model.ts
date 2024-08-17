@@ -4,16 +4,16 @@ import { Column, CreatedAt, Model, Table, UpdatedAt, PrimaryKey, AutoIncrement, 
 export class Investment extends Model {
     @PrimaryKey
     @AutoIncrement
-    @Column(DataType.NUMBER)
+    @Column(DataType.INTEGER)
     declare id: number;
 
-    @Column
-    declare value: string;
+    @Column(DataType.INTEGER)
+    declare value: number;
 
-    @Column
+    @Column(DataType.DECIMAL)
     declare annual_rate: number;
 
-    @Column
+    @Column(DataType.DATE)
     declare confirm_at: Date;
 
     @CreatedAt
